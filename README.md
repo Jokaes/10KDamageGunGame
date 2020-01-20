@@ -8,4 +8,4 @@ To play this mode while in queue -> [∞ Infinite Damage Gun Game](https://works
 
 To play this mode always in the "Havana Arena" go to: [10k Damage Gun Game in the Arena Map](https://workshop.elohell.gg/1vs8fe2G7)
 
-[youtube PmZb2oU1BQk]
+[![](https://i.imgur.com/8e7tDJk.jpg)](https://youtu.be/PmZb2oU1BQk "")
