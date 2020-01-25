@@ -1,4 +1,4 @@
-//OW Version 1.44.0.0.65302 
+// OW Version 1.44.0.1
 
 variables
 {
@@ -24,7 +24,7 @@ variables
 		7: heroSwapEffect
 }
 
-disabled rule("10K Damage Gun Game v8.0.0")
+disabled rule("10K Damage Gun Game v8.1.0")
 {
 	event
 	{
@@ -673,7 +673,7 @@ rule("Game is almost done")
 		Set Global Variable(gameIsAlmostDone, True);
 		Enable Built-In Game Mode Announcer;
 		Enable Built-In Game Mode Music;
-		Small Message(All Players(All Teams), Custom String("10K Damage Gun Game v8.0.0", Null, Null, Null));
+		Small Message(All Players(All Teams), Custom String("10K Damage Gun Game v8.1.0", Null, Null, Null));
 		Wait(3.500, Ignore Condition);
 		Small Message(All Players(All Teams), Custom String("Created by Jokaes#2263", Null, Null, Null));
 	}
@@ -1013,7 +1013,7 @@ disabled rule("Dummy Ult (TEST)")
 	}
 }
 
-rule("Game Mode Description v8.0.0")
+rule("Game Mode Description v8.1.0")
 {
 	event
 	{
@@ -1027,7 +1027,7 @@ rule("Game Mode Description v8.0.0")
 
 	actions
 	{
-		Create HUD Text(All Players(All Teams), Null, Null, Custom String("10K Damage Gun Game v8.0.0", Null, Null, Null), Left, -100.000,
+		Create HUD Text(All Players(All Teams), Null, Null, Custom String("10K Damage Gun Game v8.1.0", Null, Null, Null), Left, -100.000,
 			White, White, White, Visible To and String, Visible Always);
 		Create HUD Text(All Players(All Teams), Null, Null, Custom String("{0} to {1} to swap to the {2}", String("{0} {1} {2}", String(
 			"Deal", Null, Null, Null), 10000, String("Damage", Null, Null, Null)), String("{0} and {1}", String("Win", Null, Null, Null),
@@ -1037,9 +1037,13 @@ rule("Game Mode Description v8.0.0")
 			"{0} {1} {2}", String("Deal", Null, Null, Null), 10000, String("Damage", Null, Null, Null)), String("{0} and {1}", String(
 			"Win", Null, Null, Null), 1000, Null), String("Next Hero", Null, Null, Null)), Left, -98.000, White, White, White,
 			Visible To and String, Visible Always);
+		Create HUD Text(All Players(All Teams), Null, Null, Custom String("===============", Null, Null, Null), Left, -97.500, White,
+			White, White, Visible To and String, Default Visibility);
 		Create HUD Text(All Players(All Teams), Null, Null, Custom String("Created by Jokaes#2263", Null, Null, Null), Left, -97.000,
 			White, White, White, Visible To and String, Visible Always);
-		Small Message(All Players(All Teams), Custom String("10K Damage Gun Game v8.0.0", Null, Null, Null));
+		Create HUD Text(All Players(All Teams), Null, Null, Custom String("Updated code & more in jokaes.github.io", Null, Null, Null),
+			Left, -96.000, White, White, White, Visible To and String, Default Visibility);
+		Small Message(All Players(All Teams), Custom String("10K Damage Gun Game v8.1.0", Null, Null, Null));
 		Wait(3.500, Ignore Condition);
 		Small Message(All Players(All Teams), Custom String("{0} to {1} to swap to the {2}", String("{0} {1} {2}", String("Deal", Null,
 			Null, Null), 10000, String("Damage", Null, Null, Null)), String("{0} and {1}", String("Win", Null, Null, Null), 1000, Null),
@@ -1068,7 +1072,7 @@ rule("Game Mode Description for players who join")
 
 	actions
 	{
-		Small Message(Event Player, Custom String("10K Damage Gun Game v8.0.0", Null, Null, Null));
+		Small Message(Event Player, Custom String("10K Damage Gun Game v8.1.0", Null, Null, Null));
 		Wait(3.500, Ignore Condition);
 		Small Message(Event Player, Custom String("{0} to {1} to swap to the {2}", String("{0} {1} {2}", String("Deal", Null, Null, Null),
 			10000, String("Damage", Null, Null, Null)), String("{0} and {1}", String("Win", Null, Null, Null), 1000, Null), String(
@@ -1080,7 +1084,7 @@ rule("Game Mode Description for players who join")
 	}
 }
 
-disabled rule("10K Damage Gun Game v8.0.0")
+disabled rule("10K Damage Gun Game v8.1.0")
 {
 	event
 	{
